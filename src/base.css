@@ -14,3 +14,16 @@
 .btn-white {
   @apply bg-white text-purple-500
 }
+
+.debug, {
+  @apply border-2 border-solid
+}
+.debug-red {
+  @apply border-red-500 debug
+}
+.debug-yellow {
+  @apply border-yellow-500 debug
+}
+.debug-green {
+  @apply border-green-500 debug
+}

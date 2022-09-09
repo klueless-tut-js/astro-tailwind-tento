@@ -1,12 +1,19 @@
 ---
 export interface Props {
-  // image: string;
+  title: string;
+  image: string;
 }
 
-const { image } = Astro.props as Props;
+const { title, image } = Astro.props as Props;
+const imagePath = `/images/${image}`;
 
 // let outerContainerClass = `relative mt-20 ${outerContainerClassExtra}`;
 // let containerClass = 'container flex flex-col items-center justify-center gap-x-24' + (image_align === 'right' ? ' lg:flex-row' : ' lg:flex-row-reverse');
 // let roundedRectangleClass = 'hidden lg:block overflow-hidden bg-bookmark-purple absolute h-80 w-2/4 -bottom-24' + (image_align === 'right' ? ' -left-36 rounded-r-full' : ' -right-36 rounded-l-full');
 ---
 
+<div class='lg:h-72 w-72 bg-cover' style={`background-image: url('/images/${image}')`}>
+  <h2 class="flex items-center justify-center text-5xl font-bold uppercase h-full border-2 border-solid">
+    {title}
+  </h2>
+</div>
