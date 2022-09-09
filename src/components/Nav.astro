@@ -1,0 +1,29 @@
+---
+import NavItem from './NavItem.astro';
+---
+
+<!-- (No.8) Hill St
+Surry Hills Australia
+Morning - Lunch
+Open Monday - Saturday -->
+
+<nav class="relative p-6 ">
+  <div class="flex items-center justify-between ">
+    <div class="text-4xl uppercase">
+      Jinto
+    </div>
+    <!-- Menu Items -->
+    <div class="hidden md:flex space-x-6 uppercase text-lg">
+      <NavItem label='Home' href="#home"></NavItem>
+      <NavItem label='Coffee' href="#coffee"></NavItem>
+      <NavItem label='Vibe' href="#vibe"></NavItem>
+      <NavItem label='Food' href="#food"></NavItem>
+      <NavItem label='Clay' href="#clay"></NavItem>
+      <NavItem label='Location' href="#location"></NavItem>
+    </div>
+    <div>
+      Facebook
+      Instagram
+    </div>
+  </div>
+</nav>
