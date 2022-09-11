@@ -24,7 +24,7 @@ export function setMap(
         id: 'mapbox/streets-v11',
         tileSize: 512,
         zoomOffset: -1,
-        accessToken: 'pk.eyJ1Ijoia2x1ZWxlc3MiLCJhIjoiY2w3Y3I0Y2NyMHV5dDN2cGFlZWJrbGJsciJ9.qKjFhj3AQbMOHDD0FbLGSQ',
+        accessToken: import.meta.env.PUBLIC_MAPBOX_ACCESS_TOKEN,
         detectRetina: true,
       },
     ).addTo(map);
