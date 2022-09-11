@@ -1,3 +1,41 @@
 ---
 import Feature from './Feature.astro'
+const p_style='text-gray-500 my-2 text-center lg:text-left '
 ---
+
+<section id="features" class="debug-yellow container mx-auto max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl ">
+  <div class="debug-yellow">
+    <Feature
+      title='Specialty Coffee'
+      title_native='​スペシャリティコーヒー'
+      image='feature1.jpg'>
+      
+      <p class={p_style}>TenTo is taking coffee very seriously.</p>
+      <p class={p_style}>We are serving high quality coffee tailored & sourced by <a href='#'>Seven Miles Coffee</a>.</p>
+      <p class={p_style}>We use the Shenkin blend for our milk based coffee which offers you a full body balanced cup.</p>
+      <p class={p_style}>For black coffee drinkers, we serve single origin coffees from everywhere arounmd the globe.</p>
+    </Feature>
+
+    <Feature
+      title='Backstreet Kyoto Vibe'
+      title_native='​京都のバックストリートのような雰囲気'
+      image='feature2.jpg'
+      image_align='left'>
+
+      <p class={p_style}>TenTo vibe is friendly, uplifting, energised & professional.</p>
+      <p class={p_style}>When you walk to TenTo you will feel like you want to stay and hang out with us.</p>
+      <p class={p_style}>TenTo will turn on all your senses.</p>
+    </Feature>
+
+    <Feature
+      title='Creative Ramen an a lot more'
+      title_native='​クリエイティブなラーメンとカフェ飯'
+      image='feature3.jpg'>
+
+      <p class={p_style}>Our Food is created and made by a very experienced chef with plenty of passion for the japanese cuisine and work with some of the most famous chefs in Japan.</p>
+      <p class={p_style}>We are very lucky to have Gabriel D'Agostini at TenTo.</p>
+      <p class={p_style}>Every item on our menu has been created with a lot of focus and attention to details.</p>
+      
+    </Feature>
+  </div>
+</section>
