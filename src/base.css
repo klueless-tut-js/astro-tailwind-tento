@@ -16,7 +16,7 @@
 }
 
 .debug, {
-  /* @apply border-2 lg:border-4 border-solid md:border-dashed lg:border-double xl:border-dotted 2xl:border-dashed */
+  @apply border-2 lg:border-4 border-solid md:border-dashed lg:border-double xl:border-dotted 2xl:border-dashed
 }
 .debug-red {
   @apply border-red-500 debug
